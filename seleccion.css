@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 90vh;
+    min-width: 90vh;
+    display: flex;
+    font-size: 2rem;
+}
+.contenedor {
+    background-color: aquamarine;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.pricipal {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+    .contenedor {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
